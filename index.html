@@ -67,6 +67,136 @@
     <h1 class="page-type-title"></h1>
     
     
+    <article id="post-6_11 Leetcode - 複製" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/14/6_11%20Leetcode%20-%20%E8%A4%87%E8%A3%BD/">test5</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/05/14/6_11%20Leetcode%20-%20%E8%A4%87%E8%A3%BD/" class="article-date">
+  <time datetime="2021-05-15T01:25:32.000Z" itemprop="datePublished">2021-05-14</time>
+</a>
+      
+<div class="article-category">
+  <a class="article-category-link" href="/categories/aaa/">aaa</a>
+</div>
+
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h1 id="6-11-Leetcode"><a href="#6-11-Leetcode" class="headerlink" title="6/11 Leetcode"></a>6/11 Leetcode</h1><p><img src="https://i.imgur.com/JzFg3vr.png"></p>
+<p>key idea : 既然能走到K, 那1~(K-1)都能走到。<br>所以對於每一個i, 都去看目前最遠的位置是否能走到這個i，一但發現不行就代表不可能走到最後一個點。反之，就代表一定會走到最後一個位置。<br><img src="https://i.imgur.com/9vucRq4.png"></p>
+<p><img src="https://i.imgur.com/qin9bff.png"></p>
+<p>Sol : DPPPPPPPPP</p>
+<p>dp[i] 代表走到第i個index所需要花得最少步數<br>一開始初始化dp每個位置最少都要走nums長度的步數。<br>如果前一個數字比我目前的數字大，代表目前這個數字不用去理他，因為他都能依靠前一個數字走到。i&gt;0 只是為了避免i-1可能是-1會報錯的情形。</p>
+<p><img src="https://i.imgur.com/BmUGyB7.png"></p>
+<p><img src="https://i.imgur.com/d7qA3B6.png"></p>
+<p><img src="https://i.imgur.com/5IDmj4O.png"><br><img src="https://i.imgur.com/3L0viNV.png"></p>
+<p>SOL : DPPPPPPPP~</p>
+<p>dp是一個len(s)$\times$len(t)的矩陣。<br>dp[i][j]代表s長度是i下，跟t長度為j下是否是可以match的。</p>
+<p><img src="https://i.imgur.com/N3e1uFL.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chris85712.github.io/2021/05/14/6_11%20Leetcode%20-%20%E8%A4%87%E8%A3%BD/" data-id="ckopopt4a0001p87ka4020rwj" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
+    <article id="post-6_11 Leetcode" class="article article-type-post" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    
+    <header class="article-header">
+      
+
+<h2 itemprop="name">
+  <a class="article-title" href="/2021/05/14/6_11%20Leetcode/">test2</a>
+</h2>
+
+
+
+    </header>
+    
+
+    
+    <div class="article-meta">
+      <a href="/2021/05/14/6_11%20Leetcode/" class="article-date">
+  <time datetime="2021-05-15T01:25:32.000Z" itemprop="datePublished">2021-05-14</time>
+</a>
+      
+<div class="article-category">
+  <a class="article-category-link" href="/categories/test/">test</a>
+</div>
+
+    </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+      
+      
+      <h1 id="6-11-Leetcode"><a href="#6-11-Leetcode" class="headerlink" title="6/11 Leetcode"></a>6/11 Leetcode</h1><p><img src="https://i.imgur.com/JzFg3vr.png"></p>
+<p>key idea : 既然能走到K, 那1~(K-1)都能走到。<br>所以對於每一個i, 都去看目前最遠的位置是否能走到這個i，一但發現不行就代表不可能走到最後一個點。反之，就代表一定會走到最後一個位置。<br><img src="https://i.imgur.com/9vucRq4.png"></p>
+<p><img src="https://i.imgur.com/qin9bff.png"></p>
+<p>Sol : DPPPPPPPPP</p>
+<p>dp[i] 代表走到第i個index所需要花得最少步數<br>一開始初始化dp每個位置最少都要走nums長度的步數。<br>如果前一個數字比我目前的數字大，代表目前這個數字不用去理他，因為他都能依靠前一個數字走到。i&gt;0 只是為了避免i-1可能是-1會報錯的情形。</p>
+<p><img src="https://i.imgur.com/BmUGyB7.png"></p>
+<p><img src="https://i.imgur.com/d7qA3B6.png"></p>
+<p><img src="https://i.imgur.com/5IDmj4O.png"><br><img src="https://i.imgur.com/3L0viNV.png"></p>
+<p>SOL : DPPPPPPPP~</p>
+<p>dp是一個len(s)$\times$len(t)的矩陣。<br>dp[i][j]代表s長度是i下，跟t長度為j下是否是可以match的。</p>
+<p><img src="https://i.imgur.com/N3e1uFL.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chris85712.github.io/2021/05/14/6_11%20Leetcode/" data-id="ckopopt4f0002p87kd2ob93zk" class="article-share-link">
+        Share
+      </a>
+      
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+    
     <article id="post-test" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
@@ -76,7 +206,7 @@
       
 
 <h2 itemprop="name">
-  <a class="article-title" href="/2021/05/14/test/">NLP.md</a>
+  <a class="article-title" href="/2021/05/14/test/">test</a>
 </h2>
 
 
@@ -297,7 +427,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://chris85712.github.io/2021/05/14/test/" data-id="ckopolmqo0001387k10pc4rhx" class="article-share-link">
+      <a data-url="https://chris85712.github.io/2021/05/14/test/" data-id="ckopopt4u0007p87kbtlnakx3" class="article-share-link">
         Share
       </a>
       
