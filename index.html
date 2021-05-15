@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Sharon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="desp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sharon">
+<meta property="og:url" content="https://chris85712.github.io/index.html">
+<meta property="og:site_name" content="Sharon">
+<meta property="og:description" content="desp.">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:author" content="Chris">
+<meta property="article:tag" content="Sharon_website">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Sharon" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Sharon</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">This is my website</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜尋"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜尋"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://chris85712.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/14/test/" class="article-date">
+  <time class="dt-published" datetime="2021-05-15T01:25:32.000Z" itemprop="datePublished">2021-05-14</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/test/">test</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/14/test/">NLP.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="NLP-Transition-Based-Parsing-for-Deep-Dependency-Structures"><a href="#NLP-Transition-Based-Parsing-for-Deep-Dependency-Structures" class="headerlink" title="NLP : Transition-Based Parsing for Deep Dependency Structures"></a>NLP : Transition-Based Parsing for Deep Dependency Structures</h1><p><strong>URL</strong> : <a target="_blank" rel="noopener" href="https://www.aclweb.org/anthology/J16-3001.pdf?fbclid=IwAR2cuvWAgeuFM5IoQE8Rouzx9VE_pImvFS46so7a51DFTJMadzpmzdJpBc8">https://www.aclweb.org/anthology/J16-3001.pdf?fbclid=IwAR2cuvWAgeuFM5IoQE8Rouzx9VE_pImvFS46so7a51DFTJMadzpmzdJpBc8</a></p>
+<p><strong>前景提要: Greedy Transition-Based Parsing</strong></p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/59619401?fbclid=IwAR1GlFEfpDfUj-BbvZPhWPslp-K4UXeJDOomfTvBD764B_lUuss5Yq6qndQ">https://zhuanlan.zhihu.com/p/59619401?fbclid=IwAR1GlFEfpDfUj-BbvZPhWPslp-K4UXeJDOomfTvBD764B_lUuss5Yq6qndQ</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/kunpen8944/article/details/83349880?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1">https://blog.csdn.net/kunpen8944/article/details/83349880?depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1&amp;utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1</a><h1 id="2-1-Notations"><a href="#2-1-Notations" class="headerlink" title="2-1 Notations"></a>2-1 Notations</h1></li>
+</ol>
+<ul>
+<li><p>A dependency graph G = (V, A) is a labeled directed graph, such that $x = w_{1}, \cdots, w_{n}$ the following holds: </p>
+<ol>
+<li>$V = {0,1,2,\cdots, n}$</li>
+<li>$A \subseteq V\times R \times V$</li>
+</ol>
+</li>
+<li><p>$0$ represents a virtual root node $w_{0}$, and all others correspond to words in $x$.</p>
+</li>
+<li><p>An arc $(i,r,j)\in A$ is a dependency relation $r$ from head $w_i$ to dependent $w_j$.</p>
+</li>
+<li><p>Assume $R$ is singleton (consider unlabeled prasing) ($A \subseteq V \times V$).</p>
+</li>
+<li><p>Define a transition system for dependency parsing as a quadruple $S = (C, T, c_{s}, C_{t})$ where,</p>
+<ol>
+<li>$C$ is a set of configurations, each of which contains a buffer $\beta$ of remaining words and a set $A$ of dependency arcs.</li>
+<li>T is a set of transitions, each of which is a function $t : C \rightarrow C$.</li>
+<li>$c_{s}$ is an initialization function, mapping a sentence $x$ to a configuration with $\beta$ = [1,$\cdots$, $n$] </li>
+<li>$C_{t} \subseteq C$ is a set of terminal configurations.</li>
+</ol>
+</li>
+<li><p><strong>Oracle Sequence</strong><br> Given a sentence $x = w_{1}, \cdots, w_{n}$ and a graph $G=(V, A)$ on it, if there is a sequence of transitions $t_{1}, \cdots, t_{m}$ and a sequence of configurations $c_{0}, \cdots, c_{m}$ such that $c_{0} = c_{s}(x)$, $t_{i}(c_{i-1}) = c_{i}(i = 1,\cdots, m)$, $c_{m} \in C_{t}$, and $A_{C_{m}}=A$.</p>
+</li>
+<li><p>$\bar{A_{c_{i}}} = A - A_{c_{i}}$ the arcs to be built of $c_{i}$.</p>
+</li>
+<li><p>Denote a transition sequence as either $t_{1,m}$ or $c_{0,m}$.</p>
+</li>
+</ul>
+<h1 id="2-2-Naive-Spanning-and-Locality"><a href="#2-2-Naive-Spanning-and-Locality" class="headerlink" title="2-2 Naive Spanning and Locality"></a>2-2 Naive Spanning and Locality</h1><p><img src="https://i.imgur.com/ymObppV.png"></p>
+<ul>
+<li><p>Choice of $Link$:</p>
+<ol>
+<li>adding the arc $(i, j)$ for $(j, i)$</li>
+<li>adding no arc at all.</li>
+</ol>
+</li>
+<li><p>Time complexity : $\theta(n^{2})$</p>
+</li>
+</ul>
+<h1 id="2-3-Online-Re-ordering"><a href="#2-3-Online-Re-ordering" class="headerlink" title="2-3 Online Re-ordering"></a>2-3 Online Re-ordering</h1><ul>
+<li><p>Handle crossing arc.</p>
+</li>
+<li><p>Idea : Using <strong>SWAP</strong> transition.</p>
+<h2 id="The-system"><a href="#The-system" class="headerlink" title="The system"></a>The system</h2></li>
+<li><p>$S_{S} = (C, T, c_{s}, C_{t})$, where a configuration $c = (\sigma, \beta, A) \in C$</p>
+</li>
+<li><p>$\sigma$ : stack, $\beta$ : buffer, $A$ : dependency relations.</p>
+</li>
+<li><p>Set the initial configuration for a sentence $x = w_{1}, \cdots, w_{n}$ to be $c_{s}(x) = ([], [1, \cdots, n], {})$, and take $C_{t}$ to be the set of all configurations of the form $c_{i} = (\sigma, [], A)$ for any $\sigma$ and any $A$.</p>
+<h2 id="Transitions"><a href="#Transitions" class="headerlink" title="Transitions"></a>Transitions</h2><p><img src="https://i.imgur.com/Jy95uzY.png"></p>
+</li>
+<li><p><strong>SHIFT</strong> (<strong>sh</strong>) removes the front from the buffer and pushes it onto the stack.</p>
+</li>
+<li><p><strong>LEFT/RIGHT-ARC</strong> (<strong>la/ra</strong>) updates a configuration by adding $(j, i)$/$(i, j)$ to $A$ where $i$ is the top of stack, and $j$ is the front of the buffer.</p>
+</li>
+<li><p><strong>POP</strong> (<strong>pop</strong>) updates a configuration by poping the top of stack.</p>
+</li>
+<li><p><strong>SWAP</strong> (<strong>sw</strong>) updates a configuration with stack $\sigma|i|j$ moving $i$ back to the buffer.</p>
+</li>
+</ul>
+<h2 id="Theoretical-Analysis"><a href="#Theoretical-Analysis" class="headerlink" title="Theoretical Analysis"></a>Theoretical Analysis</h2><ul>
+<li><p>Given a sentence $x = w_{1}, \cdots. w_{n}$ and a graph $G = (V, A)$ on it.</p>
+<ol>
+<li>Initial configuration $c_{0} = c_{s}(x)$</li>
+<li>On the $i$-stap, let $p$ be the top of $\sigma_{c_{i-1}}$, $b$ be the front of $\beta_{c_{i-1}}$.</li>
+<li>Let $L(j)$ be the ordered list of nodes connected to $j$ in $\bar{A}<em>{c</em>{i-1}}$ for any node $j \in \sigma_{c_{i-1}}$.</li>
+<li>Let $\mathcal{L}(\sigma_{c_{i-1}}) = [L(j_{0}), \cdots, L(j_{l})]$ if $\sigma_{c_{i-1}}=[j_{l}, \cdots, j_{0}]$.</li>
+</ol>
+</li>
+<li><p>If there is no arc linked to p in $\bar{A}<em>{c</em>{i-1}}$, then we set $t_{i}$ to <strong>pop</strong>.</p>
+</li>
+<li><p>If there exists $a \in \bar{A}<em>{c</em>{i-1}}$ linking $p$ and $b$, then we set $t_{i}$ to <strong>la</strong> or <strong>ra</strong> correspondingly.</p>
+</li>
+<li><p>If there is any node $q$ under top of $\sigma_{c_{i-1}}$ such that $L(q)$ precedes $L(p)$ by the lexicographical order, we set $t_{i}$ to <strong>sw</strong>.</p>
+</li>
+<li><p>Otherwise, we set $t_{i}$ to <strong>sh</strong>.</p>
+</li>
+</ul>
+<p>Let $C_{i} = t_{i}(c_{i-1})$; we continue to compute $t_{i+1}$ until $\beta_{c_{i}}$ is empty.</p>
+<p><img src="https://i.imgur.com/OYqVWXe.png"><br><img src="https://i.imgur.com/h7SJTL5.jpg"></p>
+<h1 id="2-4-Two-stack-Based-System"><a href="#2-4-Two-stack-Based-System" class="headerlink" title="2.4 Two-stack-Based System"></a>2.4 Two-stack-Based System</h1><ul>
+<li><p>Handle crossing arcs.</p>
+</li>
+<li><p>Idea : Temporarily move nodes that block non-adjacent nodes to an extra memory module.</p>
+</li>
+</ul>
+<h2 id="The-System"><a href="#The-System" class="headerlink" title="The System"></a>The System</h2><ul>
+<li>$S_{2S} = (C, T, c_{s}, C_{t})$, where a configuration $c = (\sigma, \sigma^{\prime}, \beta, A) \in C$, contains a primary stack $\sigma$ and a secondary stack $\sigma^{\prime}$.</li>
+<li>$c_{s}(x) = ([], [], [1, \cdots, n], {})$ for the sentence $x = w_{1}, \cdots, w_{n}$.</li>
+<li>$C_{t}$ to be the set of all configurations with empty buffers.</li>
+</ul>
+<h2 id="Transitions-1"><a href="#Transitions-1" class="headerlink" title="Transitions"></a>Transitions</h2><p><img src="https://i.imgur.com/r1Z6KFx.png"></p>
+<ul>
+<li><p><strong>MEM</strong> (<strong>mem</strong>) pops the top element from the primary stack and pushes it onto the secondary stack.</p>
+</li>
+<li><p><strong>RECALL</strong> (<strong>rc</strong>) moves the top element of the secondary stack back to the primary stack.</p>
+<h2 id="Theoretical-Analysis-1"><a href="#Theoretical-Analysis-1" class="headerlink" title="Theoretical Analysis"></a>Theoretical Analysis</h2></li>
+<li><p><strong>la</strong>, <strong>ra</strong>, <strong>pop</strong> is same as Online Re-ordering.</p>
+</li>
+<li><p>After that, let $b$ be the front of $\beta_{c_{i-1}}$.</p>
+</li>
+<li><p>we see if there is $j \in \sigma_{c_{i-1}}$ or $j \in \sigma_{c_{i-1}}^{\prime}$ linked to $b$ by an arc in $\bar{A}<em>{c</em>{i-1}}$.</p>
+</li>
+<li><p>If $j \in \sigma_{c_{i-1}}$, then we do a sequence of <strong>mem</strong> to make $j$ the top of $\sigma_{c_{i-1}}^{\prime}$.</p>
+</li>
+<li><p>If $j \in \sigma_{c_{i-1}}^{\prime}$, then we do a sequence of <strong>rc</strong> to make $j$ the top of $\sigma_{c_{i-1}}$. </p>
+</li>
+<li><p>When no node in $\sigma_{c_{i-1}}$ or $\sigma_{c_{i-1}}^{\prime}$ is linked to $b$, we do <strong>sh</strong>.<br><img src="https://i.imgur.com/dyqsZtO.jpg"></p>
+</li>
+</ul>
+<h1 id="2-5-Extension"><a href="#2-5-Extension" class="headerlink" title="2-5 Extension"></a>2-5 Extension</h1><h2 id="Graph-with-Loops"><a href="#Graph-with-Loops" class="headerlink" title="Graph with Loops"></a>Graph with Loops</h2><ul>
+<li>Extend the system to generate arbitary directed graphs by adding a new transition.</li>
+<li><strong>SELF-ARC</strong>: adds an arc from the top element of the primary memory module ($\sigma$) to itself, but does not update any stack nor buffer.</li>
+</ul>
+<h1 id="3-1-Transition-Classification"><a href="#3-1-Transition-Classification" class="headerlink" title="3-1 Transition Classification"></a>3-1 Transition Classification</h1><ul>
+<li><p>A transition-based parser must decide which transition is appropriate given its parsing environment (i.e., configuration).</p>
+</li>
+<li><p>A discriminative classifier is utilized to approximate the oracle function for a transition system $S$ that maps a configuration $c$ to a transition $t$ that is defined on $c$.</p>
+</li>
+<li><p>Find the transition sequence $c_{0, m}$ that maximizes the SCORE:</p>
+</li>
+<li><p>SCORE($c_{0,m}$) = $\sum^{m-1}<em>{i=0}SCORE(c</em>{i}, t_{i+1})$</p>
+</li>
+<li><p>$SCORE(c_{i}, t_{i+1})=\theta^{T}\phi(c_{i}, t_{i+1})$<br>where $\phi$ defines a vector for each configuration-transition pair, $\theta$ is the weight vector for linear combination.</p>
+</li>
+<li><p>beam search to find $\phi$.<br><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RLWuzLLSIgw">https://www.youtube.com/watch?v=RLWuzLLSIgw</a> (Deeplearning.ai 吳恩達)</p>
+</li>
+<li><p>Averaged perceptron algorithm update estimate parameters $\theta$. <a target="_blank" rel="noopener" href="https://www.dropbox.com/s/tkngkky93hdy2y7/SC_final_SVM.pdf?dl=0">https://www.dropbox.com/s/tkngkky93hdy2y7/SC_final_SVM.pdf?dl=0</a> （我＆祥瑄科導期末報告 p.5）</p>
+</li>
+</ul>
+<h1 id="3-2-Transition-Combination"><a href="#3-2-Transition-Combination" class="headerlink" title="3-2 Transition Combination"></a>3-2 Transition Combination</h1><ul>
+<li><p>Problem : A majority of features for predicting an ARC transition will be overlapped with the features for the sucessive transition, this property significantly decreases the parsing accuracy.</p>
+</li>
+<li><p>Solution : Combine every pair of two successive transitions starting with ARC and transform the proposed two transition systems into two modified one.<br><img src="https://i.imgur.com/PPCzHNJ.png"></p>
+</li>
+</ul>
+<h2 id="Two-cycle-problem"><a href="#Two-cycle-problem" class="headerlink" title="Two cycle problem:"></a>Two cycle problem:</h2><ul>
+<li><p>The number of edges between any two words could be at most two in real data.</p>
+</li>
+<li><p>If there are two edges between two word $w_{a}$ and $w_{b}$, it must $w_{a} \rightarrow w_{b}$ or $w_{b} \rightarrow w_{a}$. We call these tow edges a <strong>two-cycle</strong>.</p>
+</li>
+<li><p>In our combined transitions, a LEFT/RIGHT-ARC transition should be apper before a non-ARC transition.</p>
+</li>
+<li><p>Two Strategies:</p>
+<ol>
+<li>Add a new type of transitions to each system, which consist of a LEFT-ARC transition, a RIGHT-ARC transition, and any other non-ARC transition. (e.g., LEFT-ARC-RIGHT-ARC-RECALL for $S_{2S}$).</li>
+<li>Use a non-directional ARC transtion. We propose two algorithms, namely, <strong>ENCODELABEL</strong> and <strong>DECODELABEL</strong>. An ARC transition may add one or two edges depend on its label.<br><img src="https://i.imgur.com/pc1VEFO.png"><br><img src="https://i.imgur.com/uJfH15G.png"></li>
+</ol>
+</li>
+</ul>
+<p>If there are total $K$ possible labels in training data.</p>
+<ul>
+<li>Using strategy 1:<ul>
+<li>Add additional transitions to handle the two-cycle condition. </li>
+<li>Based on experiments, the performance decreased when using more transitions.</li>
+<li>Must add $K^{2}$ transitions to deal with all possible types.</li>
+</ul>
+</li>
+<li>Using strategy 2:<ul>
+<li>Change the original edges’ labels and use the ARC(label)-non-ARC transition instead of LEFT/RIGHT-ARC(label)-non-ARC.</li>
+<li>Not only do we encode two-cycle labels, but also LEFT/RIGHT-ARC labels.</li>
+</ul>
+</li>
+</ul>
+<p>Labels that do not appear only contribute non-negative weights while training, we can eliminate them without any performance loss.</p>
+<p><img src="https://i.imgur.com/S2Pd3tl.png"><br><img src="https://i.imgur.com/bASi6BI.png"><br><img src="https://i.imgur.com/dHEY5JS.png"></p>
+<p>[THMM 出處:<br>Titov, Ivan, James Henderson, Paola Merlo,<br>and Gabriele Musillo. 2009. Online graph<br>planarisation for synchronous parsing<br>of semantic and syntactic dependencies.]<br>(<a target="_blank" rel="noopener" href="https://www.ijcai.org/Proceedings/09/Papers/261.pdf">https://www.ijcai.org/Proceedings/09/Papers/261.pdf</a>)<br><img src="https://i.imgur.com/cA5fJEe.png"></p>
+<p>Discussion:<br>因該是說，原本的無法解決有交叉情況的relation。他就用了一個方法是能夠產生出交叉情形的relation。<br>『還有就是他在尋找最好的transition sequence，他發現上下連續的feature會差不多，所以就合併兩成成一個』</p>
+<p>In this experiment, we distinguish parsing models with and without transition combination.<br>他好像有做六種可能的combine<br>2s : two stack<br>T  : THMM<br>std : which do not combine an ARC transition (No transition combine)<br>TC : transition combine<br>{std , TC } X {T, S, 2S}<br>[有無方法？] Ｘ [不同的transition?]<br>恩恩對 就是他現在把兩個transition合其來變一個，比如(lr+pop）當作一個transition方式。<br>std 就是lr pop就是個別兩種不同的transition方式。<br><img src="https://i.imgur.com/Ei2xoMe.png"></p>
+<p>這個把她留著ＸＤ 明天可能比較好講解ＸＤ</p>
+<h1 id="4-Tree-Approximation"><a href="#4-Tree-Approximation" class="headerlink" title="4 Tree Approximation:"></a>4 Tree Approximation:</h1><p>Induce tree backbones from deep dependency graphs, tree backbones can be utilized to train a tree parser which provides pseudo path features.<br>idea : assign heuristic weights to all ordered pairs of words(all pairs of words), and then find the tree with maximum weights(finding the maximum spanning tree).<br>nodes : $V$<br>each possible edge : $edge(i,j), i,j \in  V$<br>assign heuristic weight : $w(i,j)$<br>all tree : $T$, maximum spanning tree </p>
+<p><img src="https://i.imgur.com/QTbSj1N.png"><br>$w(i,j) = A(i,j) + B(i,j) + C(i,j)$<br><img src="https://i.imgur.com/Ljag79n.png"></p>
+<p>the tree is informative only when the given graph is dense enough. Fortunately, this condition holds for semantic dependency parsing.</p>
+<h1 id="5-Conclusion"><a href="#5-Conclusion" class="headerlink" title="5 Conclusion"></a>5 Conclusion</h1><p>總之就是在說明</p>
+<ol>
+<li>使用tranistion combination &gt; none</li>
+<li>使用2-stack &gt; stack</li>
+<li>$S^{rev} &gt; S$, $S^{rev}_{x}$ means processing a sentence with system $S_x$ but in the right-to-left word order.</li>
+</ol>
+<p>transition-based : produce general dependency graphs directly from input sequences of words, in a way nearly as simple as tree parsers.</p>
+<p>transition combination and tree approximation for statistical disambiguation</p>
+<p>state-of-the-art performance on five representative data sets for English and Chinese parsing.</p>
+<p>依存樹不能有交叉或回圈，因為映射性。<br>若出現了交叉就是non-projective的是否可以將一個依存句法樹還原為句子，答案是否定的<br><img src="https://i.imgur.com/QrXjxte.png"><br><img src="https://i.imgur.com/RhOs7fi.png"><br><img src="https://i.imgur.com/5A1gaC1.png"></p>
+<p><img src="https://i.imgur.com/O0HGaEo.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://chris85712.github.io/2021/05/14/test/" data-id="ckopmlmwm0000mc7k6csocp8h" data-title="NLP.md" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分類</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">彙整</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/14/test/">NLP.md</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Chris<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
