@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>test2</title>
-    <url>/2021/05/14/6_11%20Leetcode/</url>
-    <content><![CDATA[<h1 id="6-11-Leetcode"><a href="#6-11-Leetcode" class="headerlink" title="6/11 Leetcode"></a>6/11 Leetcode</h1><p><img src="https://i.imgur.com/JzFg3vr.png"></p>
-<p>key idea : 既然能走到K, 那1~(K-1)都能走到。<br>所以對於每一個i, 都去看目前最遠的位置是否能走到這個i，一但發現不行就代表不可能走到最後一個點。反之，就代表一定會走到最後一個位置。<br><img src="https://i.imgur.com/9vucRq4.png"></p>
-<p><img src="https://i.imgur.com/qin9bff.png"></p>
-<p>Sol : DPPPPPPPPP</p>
-<p>dp[i] 代表走到第i個index所需要花得最少步數<br>一開始初始化dp每個位置最少都要走nums長度的步數。<br>如果前一個數字比我目前的數字大，代表目前這個數字不用去理他，因為他都能依靠前一個數字走到。i&gt;0 只是為了避免i-1可能是-1會報錯的情形。</p>
-<p><img src="https://i.imgur.com/BmUGyB7.png"></p>
-<p><img src="https://i.imgur.com/d7qA3B6.png"></p>
-<p><img src="https://i.imgur.com/5IDmj4O.png"><br><img src="https://i.imgur.com/3L0viNV.png"></p>
-<p>SOL : DPPPPPPPP~</p>
-<p>dp是一個len(s)$\times$len(t)的矩陣。<br>dp[i][j]代表s長度是i下，跟t長度為j下是否是可以match的。</p>
-<p><img src="https://i.imgur.com/N3e1uFL.png"></p>
-]]></content>
-      <categories>
-        <category>test</category>
-      </categories>
-  </entry>
-  <entry>
     <title>test5</title>
     <url>/2021/05/14/6_11%20Leetcode%20-%20%E8%A4%87%E8%A3%BD/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密碼不對。" data-whm="不能糾正哦。">
@@ -36,6 +17,25 @@
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>aaa</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>test2</title>
+    <url>/2021/05/14/6_11%20Leetcode/</url>
+    <content><![CDATA[<h1 id="6-11-Leetcode"><a href="#6-11-Leetcode" class="headerlink" title="6/11 Leetcode"></a>6/11 Leetcode</h1><p><img src="https://i.imgur.com/JzFg3vr.png"></p>
+<p>key idea : 既然能走到K, 那1~(K-1)都能走到。<br>所以對於每一個i, 都去看目前最遠的位置是否能走到這個i，一但發現不行就代表不可能走到最後一個點。反之，就代表一定會走到最後一個位置。<br><img src="https://i.imgur.com/9vucRq4.png"></p>
+<p><img src="https://i.imgur.com/qin9bff.png"></p>
+<p>Sol : DPPPPPPPPP</p>
+<p>dp[i] 代表走到第i個index所需要花得最少步數<br>一開始初始化dp每個位置最少都要走nums長度的步數。<br>如果前一個數字比我目前的數字大，代表目前這個數字不用去理他，因為他都能依靠前一個數字走到。i&gt;0 只是為了避免i-1可能是-1會報錯的情形。</p>
+<p><img src="https://i.imgur.com/BmUGyB7.png"></p>
+<p><img src="https://i.imgur.com/d7qA3B6.png"></p>
+<p><img src="https://i.imgur.com/5IDmj4O.png"><br><img src="https://i.imgur.com/3L0viNV.png"></p>
+<p>SOL : DPPPPPPPP~</p>
+<p>dp是一個len(s)$\times$len(t)的矩陣。<br>dp[i][j]代表s長度是i下，跟t長度為j下是否是可以match的。</p>
+<p><img src="https://i.imgur.com/N3e1uFL.png"></p>
+]]></content>
+      <categories>
+        <category>test</category>
       </categories>
   </entry>
   <entry>
